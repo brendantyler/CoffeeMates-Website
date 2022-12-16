@@ -1,0 +1,89 @@
+@import "./reset.css";
+
+body{
+  height: 100vh;
+  background-color: gray;
+}
+
+#login-window {
+  box-shadow: 3vh;
+  display: flex;
+  margin: auto;
+  margin-top: 10vh;
+  background-color: white;
+  width: 80%;
+  height: 80%;
+  border-radius: 2vh;
+  overflow-x: hidden;
+}
+
+#logo-container {
+  width: 40%;
+  height: 100%;
+}
+
+#login-container{
+  background-color: aliceblue;
+  width: 60%;
+  height: 100%;
+}
+
+#login-fields{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 20vh;
+  height: 50%;
+  width: 60%;
+  color: cornflowerblue;
+}
+            
+#login-fields p {
+  margin-left: 2vh;
+  margin-top: -2vh;
+  font-size: 2vh;
+}
+
+#input-error {
+  color: rgb(248, 108, 95);
+}
+#login-fields h2 {
+  font-size: 5vh ;
+  margin-bottom: 2vh;
+}
+
+#forgot-pass{
+  margin-right: 20vh;
+  cursor: pointer;
+}
+
+#forgot-pass:hover{
+  color: rgb(184, 185, 186);
+}
+
+input {
+  height: 7vh;
+  margin-bottom: 3vh;
+}
+
+::-webkit-input-placeholder{
+  padding-left: 2vh;
+  font-size: 3vh;
+}
+
+#login-button {
+  color: white;
+  background-color: cornflowerblue;
+  margin-top: 5%;
+  align-self: center;
+  width: 15vh;
+  height: 7vh;
+  font-size: 2.25vh;
+  font-weight: bolder;
+  border-radius: .5vh;
+}
+ 
+.hidden{
+  visibility: collapse;
+}
