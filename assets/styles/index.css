@@ -1,9 +1,8 @@
 @import "./reset.css";
 
 body{
-  height: 100vh;
-  background-color: gray;
-}
+  background: rgb(130,92,66);
+  background: linear-gradient(45deg, rgba(130,92,66,1) 0%, rgba(177,129,93,1) 21%, rgba(236,196,166,1) 100%);}
 
 #login-window {
   box-shadow: 3vh;
@@ -15,15 +14,21 @@ body{
   height: 80%;
   border-radius: 2vh;
   overflow-x: hidden;
+  box-shadow: 0.4px 0.4px 5px 0.5px rgba(60, 58, 58, 0.879);
 }
 
 #logo-container {
-  width: 40%;
+  width: 50%;
   height: 100%;
+}
+#logo-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 #login-container{
-  background-color: aliceblue;
+  background-color: #b38c71;
   width: 60%;
   height: 100%;
 }
@@ -33,29 +38,46 @@ body{
   flex-direction: column;
   justify-content: space-between;
   margin: auto;
-  margin-top: 20vh;
-  height: 50%;
+  margin-top: 12vh;
+  height: 70%;
   width: 60%;
-  color: cornflowerblue;
+  color: rgb(28, 8, 3);
 }
             
 #login-fields p {
   margin-left: 2vh;
   margin-top: -2vh;
   font-size: 2vh;
+
 }
 
 #input-error {
   color: rgb(248, 108, 95);
 }
+
 #login-fields h2 {
-  font-size: 5vh ;
+  font-size: 4vh ;
   margin-bottom: 2vh;
 }
+#login-fields h1 {
+  font-size: 6vh ;
+  margin-bottom: 2vh;
+}
+#email-invalid {
+  padding-left:  1vh;
+  padding-bottom: 2vh;
+}
+#pass-invalid {
+  padding-left:  1vh;
+  padding-bottom: 2vh;
+}
+
+
 
 #forgot-pass{
-  margin-right: 20vh;
   cursor: pointer;
+  padding-left: 1vh;
+  padding-top: 1vh;
 }
 
 #forgot-pass:hover{
@@ -63,18 +85,16 @@ body{
 }
 
 input {
+  box-shadow: 0px 0px 2px 0px;
   height: 7vh;
-  margin-bottom: 3vh;
-}
-
-::-webkit-input-placeholder{
-  padding-left: 2vh;
-  font-size: 3vh;
+  margin-bottom: 2vh;
+  padding-left: 3vh;
+  font-size: 2.5vh
 }
 
 #login-button {
   color: white;
-  background-color: cornflowerblue;
+  background-color: rgb(28, 8, 3);
   margin-top: 5%;
   align-self: center;
   width: 15vh;

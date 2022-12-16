@@ -14,11 +14,9 @@ body{
   height: 100%;
 }
 
-
 .header {
   background-color: #f7f7f7;
 }
-
 
 .profile{
   border-radius: 2vh;
@@ -92,13 +90,25 @@ body{
   width: 60%;
 }
 
-#contacts {
+#contacts-container {
   border-radius: 2vh;
   background-color: #f7f7f7;
   margin-right: 2vh;
   width: 20%;
-  height: 95vh;
+  height: 89vh;
+  overflow: hidden;
+  position: relative;
 }
+.show-more {
+  position: absolute;
+}
+
+#contact-head {
+  text-align: center;
+  padding-top: 2vh;
+  padding-bottom: 1vh;
+}
+
 
 .ran-user {
   display: flex;
@@ -168,7 +178,7 @@ li {
   background-color: #f7f7f7;
 }
 
-#posts {
+#stories {
   margin-left: auto;
   margin-right: auto;
   display: flex;
