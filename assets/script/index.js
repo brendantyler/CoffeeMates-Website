@@ -18,7 +18,7 @@ forgotPass.addEventListener('click', showCreds)
 window.addEventListener('onload', setLocal())
 
 function setLocal() {
-  localStorage.setItem('email', 'brendan@coffeemate.com'); 
+  localStorage.setItem('email', 'brendan@coffeemates.com'); 
   localStorage.setItem('pass', 'coffeemate123');
   console.log(localStorage)
 }
