@@ -16,6 +16,8 @@ body{
 
 .header {
   background-color: #f7f7f7;
+  box-shadow: 0px 0.5px 5px 0.5px #8c8b8b64;
+
 }
 
 .profile{
@@ -25,6 +27,8 @@ body{
   background-color: #f7f7f7;
   width: 23%;
   height: 95vh;
+  box-shadow: 0px 0.5px 5px 0.5px #8c8b8b64;
+
 }
 
 .profile-picture{
@@ -74,6 +78,7 @@ body{
 }
 
 .edit-profile {
+  color: #f7f7f7;
   margin-top: 2vh;
   border-radius: 1vh;
   background-color: cornflowerblue;
@@ -95,12 +100,13 @@ body{
   background-color: #f7f7f7;
   margin-right: 2vh;
   width: 20%;
-  height: 89vh;
-  overflow: hidden;
+  height: 150vh;
   position: relative;
+  box-shadow: 0px 0.5px 5px 0.5px #8c8b8b64;
 }
-.show-more {
-  position: absolute;
+
+.hidden {
+  visibility: collapse;
 }
 
 #contact-head {
@@ -108,7 +114,6 @@ body{
   padding-top: 2vh;
   padding-bottom: 1vh;
 }
-
 
 .ran-user {
   display: flex;
@@ -123,7 +128,7 @@ body{
 }
 
 .ran-picture {
-  width: 40%;
+  width: 30%;
 }
 .ran-img {
   border-radius: 100%;
@@ -133,7 +138,6 @@ body{
   margin: auto;
   margin-left: 3vh;
 }
-
 
 #header-container {
   padding: 2vh;
@@ -160,7 +164,8 @@ li {
 }
 
 #logout-btn{
-  background-color: cornflowerblue;
+  color: #f7f7f7;
+  background-color: #6495ed;
   width: 10%;
   font-size: 1rem;
   border-radius: 1vh;
@@ -223,13 +228,16 @@ li {
   height: auto;
   width: 95%;
   box-shadow: 0px 0.5px 5px 0.5px #8c8b8b64;
-
+}
+.post-content img {
+  border-radius: 2vh;
+  margin-bottom: 2vh;
 }
 .post-header{
   width: 26vh;
   display: flex;
-  padding-left: 2vh;
-  padding-top: 2vh;
+  padding-left: 3vh;
+  padding-top: 3vh;
   padding-bottom: 2vh;
 }
 
@@ -255,6 +263,20 @@ li {
 }
 .post-content {
   padding-bottom: 3vh;
-  padding-right: 2vh;
-  padding-left: 2vh;
+  padding-left: 4vh;
+  padding-right: 4vh;
+}
+.post-content input {
+  border-radius: 2vh;
+  margin-top: 0.5vh;
+  height: 3vh;
+  width: 100%;
+  box-shadow: 0px 0.5px 5px 0.5px #8c8b8b64;
+}
+
+#comment-header {
+  color: #7b7b7b;
+
+  margin-top: 2vh;
+  font-size: 2vh;
 }

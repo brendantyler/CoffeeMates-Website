@@ -1,6 +1,5 @@
-const contactsContainer = document.getElementById('contacts')
-
-
+const contactsContainer = document.getElementById('contacts');
+const logoutButton = document.getElementById('logout-btn');
 
 'use strict'
 
@@ -10,7 +9,12 @@ function create(element, parent = document) {
   return parent.createElement(element);
 }
 
+/* Event Listeners */
+logoutButton.addEventListener('click', backToLogin);
 
+function backToLogin () {
+ window.location = 'index.html'
+}
 
 const url = 'https://randomuser.me/api/?nat=CA&results=10&seed=same';
 
