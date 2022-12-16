@@ -9,9 +9,6 @@ const forgotPass = document.getElementById('forgot-pass');
 const loginButton = document.getElementById('login-button');
 const inputError = document.getElementById('input-error');
 
-const user = localStorage.getItem('email');
-const password = localStorage.getItem('pass');
-
 loginButton.addEventListener('click', checkCookies);
 forgotPass.addEventListener('click', showCreds)
 
@@ -30,6 +27,9 @@ function checkCookies(){
 }
 
 function validate () {
+  const user = localStorage.getItem('email');
+  const password = localStorage.getItem('pass');
+
   let email = emailInput.value
   let pass = passwordInput.value
  
