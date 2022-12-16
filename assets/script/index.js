@@ -5,7 +5,6 @@ let emailInput = document.getElementById('email')
 let passwordInput = document.getElementById("password");
 let credentials = document.getElementById('access')
 
-
 const forgotPass = document.getElementById('forgot-pass');
 const loginButton = document.getElementById('login-button');
 const inputError = document.getElementById('input-error');
@@ -13,23 +12,26 @@ const inputError = document.getElementById('input-error');
 const user = localStorage.getItem('email');
 const password = localStorage.getItem('pass');
 
-
 loginButton.addEventListener('click', checkCookies);
 forgotPass.addEventListener('click', showCreds)
 
+window.addEventListener('onload', setLocal())
+
+function setLocal() {
+  localStorage.setItem('email', 'brendan@coffeemate.com'); 
+  localStorage.setItem('pass', 'coffeemate123');
+  console.log(localStorage)
+}
+
 function checkCookies(){
-  if (localStorage.length == 0) {
-    localStorage.setItem('email', 'brendan@coffeemate.com'); 
-    localStorage.setItem('pass', 'coffeemate123');
-     validate()
-  } else {
+  if (localStorage.length > 0 ) {
     validate()
   }
 }
 
 function validate () {
-  let email = emailInput.value.toLowerCase();
-  let pass = passwordInput.value.toLowerCase();
+  let email = emailInput.value
+  let pass = passwordInput.value
  
   if (user != email || password != pass) {    
     inputError.classList.remove('hidden');
