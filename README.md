@@ -1,4 +1,4 @@
-# A Social media clone
+# Coffee Mates Social Media Platform
 Click [here](https://brendantyler.github.io/CoffeeMates-Website/) to see hosted site.
 
 ##  Features
